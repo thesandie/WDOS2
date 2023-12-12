@@ -57,17 +57,17 @@
                         <legend>PERSONAL INFORMATION</legend>
 
                         <div class="input-box">
-                            <label>Full Name</label>
+                            <label for="fullName">Full Name</label>
                             <input type="text" placeholder="" id="fullName" required>
                         </div>
         
                         <div class="input-box">
-                            <label>Phone Number</label>
-                            <input type="number" placeholder="" id="phoneNumber" required>
+                            <label for="phoneNumber">Phone Number</label>
+                            <input type="number" placeholdesr="" id="phoneNumber" required>
                         </div>
         
                         <div class="input-box">
-                            <label>Email Address</label>
+                            <label for="email">Email Address</label>
                             <input type="email" placeholder="" id="email" required>
                         </div>
                     </fieldset>
@@ -80,29 +80,29 @@
     
                         <div class="column">
                             <div class="input-box">
-                                <label><u>Check-in Date</u></label>
+                                <label for="checkin"><u>Check-in Date</u></label>
                                 <input type="date" id="checkin" name="date">
                             </div>
         
                             <div class="input-box">
-                                <label><u>Check-out Date</u></label>
+                                <label for="checkout"><u>Check-out Date</u></label>
                                 <input type="date" id="checkout" name="date">
                             </div>
                         </div>
     
                         <div class="column">
                             <div class="input-box">
-                                <label><u>Number of Adults</u></label>
+                                <label for="adults"><u>Number of Adults</u></label>
                                 <input type="number" placeholder="0" min="0" max="20" id="adults">
                             </div>
         
                             <div class="input-box">
-                                <label><u>Number of Children</u></label>
+                                <label for="noChildren"><u>Number of Children</u></label>
                                 <input type="number" placeholder="0" min="0" max="20" id="noChildren">
                             </div>
 
                             <div class="input-box">
-                                <label><u>Meal - For Kids Above 5</u></label>
+                                <label for="mealsKids"><u>Meal - For Kids Above 5</u></label>
                                 <input type="number" placeholder="0" min="0" max="20" id="mealsKids">
                             </div>
                         </div>
@@ -112,13 +112,13 @@
                         </div>
 
                         <div class="room-types">
-                            <label>Single Rooms :</label>
+                            <label for="singleRooms">Single Rooms :</label>
                             <input placeholder="0" type="number" min="0" max="10" id="singleRooms">
 
-                            <label>Double Rooms :</label>
+                            <label for="doubleRooms">Double Rooms :</label>
                             <input placeholder="0" type="number" min="0" max="10" id="doubleRooms">
 
-                            <label>Triple Rooms :</label>
+                            <label for="tripleRooms">Triple Rooms :</label>
                             <input placeholder="0" type="number" min="0" max="10" id="tripleRooms">
                         </div>
 
@@ -144,7 +144,7 @@
 
                         <div class="promo-and-loyalty">
                             <div class="promo">
-                                <label><u>Promo Code :</u></label>
+                                <label for="promocode"><u>Promo Code :</u></label>
                                 <input type="text" id="promocode">
                             </div>
                             
@@ -173,12 +173,12 @@
                         <legend>Adventure Booking</legend>
 
                         <div class="input-box">
-                            <label>Full Name</label>
+                            <label for="advName">Full Name</label>
                             <input type="text" placeholder="Enter full name" id="advName" required>
                         </div>
 
                         <div class="input-box">
-                            <label>Adventure Type:</label>
+                            <label for="adventureType">Adventure Type:</label>
                             <select id="adventureType" required>
                                 <option label="none" value="" disabled selected hidden></option>
                                 <option value="Water Sports" id="advWater">Water Sports (Diving, Jet Skiing, Parasailing)</option>
@@ -189,24 +189,24 @@
 
                         <div class="column">
                             <div class="input-box">
-                                <label>Number of Local Adults</label>
+                                <label for="localAdults">Number of Local Adults</label>
                                 <input type="number" placeholder="0" id="localAdults" required>
                             </div>
         
                             <div class="input-box">
-                                <label>Number of Local Children</label>
+                                <label for="localKids">Number of Local Children</label>
                                 <input type="number" placeholder="0" id="localKids" required>
                             </div>
                         </div>
 
                         <div class="column">
                             <div class="input-box">
-                                <label>Number of Foreign Adults</label>
+                                <label for="foreignAdults">Number of Foreign Adults</label>
                                 <input type="number" placeholder="0" id="foreignAdults" required>
                             </div>
         
                             <div class="input-box">
-                                <label>Number of Foreign Children</label>
+                                <label for="foreignKids">Number of Foreign Children</label>
                                 <input type="number" placeholder="0" id="foreignKids" required>
                             </div>
                         </div>
