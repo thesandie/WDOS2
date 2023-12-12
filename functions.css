@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* =========== HEADER SECTION ================= */
+#functions{
+    background-image: url(images/header7.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: fixed;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ============ NAVIGATION BAR ================= */
+
+header .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(115, 147, 179, 0.8);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    
+}
+
+header .logo img {
+    width: 200px;
+    height: 40px;
+}
+
+header .navbar ul {
+    list-style: none;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a {
+    font-size: 20px;
+    padding: 20px;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+
+header .navbar ul li a:hover {
+    background: #a5c5de;
+    color: #333;
+}
+
+header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #fff;
+    display: none;
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    background: #1F456E;
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+    display: initial;
+}
+
+#menu-bar {
+    display: none; /* RESPONSIVE NAVIGATION BAR */
+}
+
+header label {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
+
+/* ============== ELEMENTS ON HERO-IMAGE ============== */
+
+header .heading {
+    position: absolute;
+    color: #fff;
+}
+
+header .heading h1 {
+    font-size: 80px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+header .heading p {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+header .button {
+    position:absolute;
+    list-style: none;
+    font-size: 20px;
+    padding: 10px;
+    background: #fff;
+    color: #333;
+    display: block;
+    border-radius: 20px;
+    text-decoration: none;
+    left: 40%;
+}
+
+header .button:hover {
+    background: #a5c5de;
+}
+
+
+
+/* Event info section styles */
+.event-info {
+    max-width: 100%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    animation: float 2s infinite;
+    text-align: center;
+}
+
+.event-info h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.event-info p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.event-info img {
+    max-width: 60%;
+    height: auto;
+}
+
+.event-info video {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* =============== FOOTER ============== */
+footer .container {
+    background-color: black;
+}
+
+footer .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+}
+
+footer .column h4 {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 22px;
+    position: relative;
+    font-family: poppins;
+}
+
+footer .column h4::before {
+    content: "";
+    width: 70px;
+    height: 2px;
+    position: absolute;
+    background-color: rgba(74, 149, 184, 0.868);
+    bottom: -10px;
+}
+
+footer .column p {
+    color: white;
+    opacity: 0.7;
+    padding: 10px 0;
+}
+
+footer .column ul {
+    list-style: none;
+}
+
+footer .column ul li {
+    padding: 10px 0;
+}
+
+footer .column ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+footer .column ul li a:hover {
+    opacity: 1;
+}
+
+footer .column input {
+    border: none;
+    width: 250px;
+    height: 45px;
+    display: block;
+    padding-left: 20px;
+    margin: 14px 0;
+}
+
+footer .column .inputSubmit {
+    padding: 0px 20px;
+    background-color: rgba(74, 149, 184, 0.868);
+    border: none;
+    color: white;
+}
+
+footer .col p {
+    color: white;
+}
+
+footer hr {
+    opacity: 0.7;
+}
+
+
+
+
+/*============== MOBILE RESPONSIVE AT MAX-WIDTH: 1200PX ===============*/
+
+@media screen and (max-width:1200px){
+
+}
+
+
+
+/*============= MOBILE RESPONSIVE AT MAX-WIDTH: 1000PX ================*/
+
+@media screen and (max-width:1000px){
+
+    /* ==== ELEMENTS ON HERO-IMAGE ==== */
+    header .heading h1 {
+        font-size: 70px;
+    }
+}
+
+/*============== MOBILE RESPONSIVE AT MAX-WIDTH: 930PX ================*/
+
+@media(max-width:930px){
+
+    /*====NAVIGATION BAR====*/
+    header .navigation{
+        padding: 20px;
+    }
+
+    header label{
+        display: initial;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(115, 147, 179, 1);
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        display: none;  
+    }
+
+    header .navbar ul li{
+        width: 100%;
+    }
+
+    header .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li{
+        background: #1F456E;
+    }
+
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+
+    /*====ELEMENTS ON HERO-IMAGE====*/
+    header .title {
+        position: absolute;
+        text-align: center;
+        left: 10%;
+        color: #fff;
+    }
+
+    header .heading h1 {
+        font-size: 65px;
+    }
+
+    /*====FOOTER====*/
+    footer {
+        padding: 20px;
+    }
+}
+
+/*============== MOBILE RESPONSIVE AT MAX-WIDTH: 600PX =================*/
+
+@media (max-width:600px){
+
+    /*====ELEMENTS ON HERO-IMAGE====*/
+    header .heading h1 {
+        font-size: 50px;
+    }
+
+    header .heading p {
+        font-size: 15px;
+    }
+
+    /*====FOOTER====*/
+    footer .row {
+        flex-direction: column;
+        padding: 20px 30px;
+    }
+
+    footer .column {
+        width: 100%;
+    }
+
+    footer .column p {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    footer .column ul {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    footer .column input {
+        width: 100%;
+    }
+}
+
+
+/*============== MOBILE RESPONSIVE AT MAX-WIDTH: 400PX ==================*/
+
+@media(max-width: 400px) {
+
+    /* ===== NAVIGATION BAR ==== */
+    header .logo {
+        font-size: 20px;
+    }
+
+    /* ==== ELEMENTS ON HERO-IMAGE ==== */
+    header .heading h1 {
+        font-size: 40px;
+    }
+
+    header .heading p {
+        font-size: 10px;
+    }
+
+    header .button {
+        font-size: 10px;
+    }
+
+}
+

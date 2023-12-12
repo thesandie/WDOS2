@@ -1,0 +1,2294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* ======================== HEADER SECTION =============================== */
+
+/* ===== INDEX PAGE ===== */
+#home{
+    background-image: url(images/header1.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: fixed;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== BRANCHES PAGE ===== */
+#branches{
+    background-image: url(images/header2.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: fixed;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== ADVENTURES PAGE ===== */
+#adventures {
+    background-image: url(images/header4.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: fixed;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== RESTAURANTS PAGE ===== */
+#restaurants {
+    background-image: url(images/header3.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: fixed;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== BOOKINGS PAGE ===== */
+#booking {
+    background-image: url(images/header5.png);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: fixed;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ============================ NAVIGATION BAR ============================== */
+
+header .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(115, 147, 179, 0.8);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    
+}
+
+header .logo img {
+    width: 200px;
+    height: 40px;
+}
+
+header .navbar ul {
+    list-style: none;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a {
+    font-size: 20px;
+    padding: 20px;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+
+header .navbar ul li a:hover {
+    background: #a5c5de;
+    color: #333;
+}
+
+header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #fff;
+    display: none;
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    background: #1F456E;
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+    display: initial;
+}
+
+#menu-bar {
+    display: none; /* RESPONSIVE NAVIGATION BAR */
+}
+
+header label {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
+
+/* ============================= ELEMENTS ON HERO-IMAGE ========================= */
+
+header .heading {
+    position: absolute;
+    color: #fff;
+}
+
+header .heading h1 {
+    font-size: 80px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+header .heading p {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+header .button {
+    position:absolute;
+    list-style: none;
+    font-size: 20px;
+    padding: 10px;
+    background: #fff;
+    color: #333;
+    display: block;
+    border-radius: 20px;
+    text-decoration: none;
+    left: 40%;
+}
+
+header .button:hover {
+    background: #a5c5de;
+}
+
+/*========================== MAIN SECTION 1 ===========================*/
+
+/* ===== INDEX PAGE ===== */
+.first-section {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
+.about-section {
+    background: url(images/image1.jpg) no-repeat left;
+    background-size: 55%;
+    background-color: #f1f1f1;
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+.inner-container {
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 80px;
+}
+
+.inner-container h1 {
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-weight: 900;
+    /* text-decoration: underline; */
+}
+
+.text {
+    font-size: 14px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+}
+
+/* ===== BRANCHES PAGE ===== */
+.branches-first-section {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
+.branches-intro-section {
+    background: url(images/image11.jpg) no-repeat left;
+    background-size: 55%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+.branches-inner-container1 {
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 80px;
+}
+
+.branches-inner-container1 h1 {
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.branches-inner-container1 .text {
+    font-size: 14px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+}
+
+
+/* ===== ADVENTURES PAGE ===== */
+.adventures-first-section {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
+.adventures-intro-section {
+    background: url(images/image22.jpg) no-repeat left;
+    background-size: 55%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+.adventures-inner-container1 {
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 80px;
+}
+
+.adventures-inner-container1 h1 {
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.adventures-inner-container1 .text {
+    font-size: 14px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+}
+
+
+/* ===== RESTAURANTS PAGE ===== */
+.restaurants-first-section {
+    min-height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
+.restaurants-one-section {
+    background: url(images/image38.png) no-repeat left;
+    background-size: 60%;
+    background-color: #f1f1f1;
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+.inner-container-one {
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 80px;
+}
+
+.inner-container-one h1 {
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.text {
+    font-size: 14px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.text a {
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* ===== BOOKINGS PAGE ===== */
+.booking-class {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(115, 147, 179, 0.8);
+    padding: 50px;
+}
+
+.form-container {
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    background: #fff;
+    padding: 40px;
+    margin-left: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h1 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+}
+
+.form-container .form {
+    margin-top: 30px;
+}
+
+.form fieldset {
+    padding: 40px;
+    margin-bottom: 60px;
+}
+
+legend {
+    font-size: 20px;
+}
+
+.form .input-box, .room-types {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-box label {
+    color: #333;
+}
+
+.form .input-box input {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #f4f4f4;
+    background-color: #476e89;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+.form .column {
+    display: flex;
+    column-gap: 80px;
+}
+
+.room-types label {
+    color: #575656;
+}
+
+.room-types input {
+    margin-right: 30px;
+    height: 50px;
+    width: 80px;
+    font-size: 1rem;
+    color: #f4f4f4;
+    background-color: #476e89;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.extra-requirements {
+    display: inline-block;
+    margin-right: 80px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.amenities {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    color: #575656;
+}
+
+.amenities label {
+    margin-right: 40px;
+    color: #575656;
+}
+
+.amenities select {
+    width: 60px;
+    height: 30px;
+    background-color: #476e89;
+    color: #ffffff;
+    border-radius: 6px;
+}
+
+.promo-and-loyalty, .currentCosts {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.promo label, .currentCosts label {
+    color: #333;
+}
+
+.promo input {
+    height: 50px;
+    width: 200px;
+    outline: none;
+    font-size: 1rem;
+    color: #f4f4f4;
+    background-color: #476e89;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.loyalty{
+    display: flex;
+    align-items: center;
+}
+
+.loyaltyBox {
+    display: flex;
+    width: 140px;
+    height: 50px;
+    background-color: #476e89;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    color: #fff;
+    padding: 0 15px;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.loyalty button {
+    margin-left: 80px;
+    font-size: 1rem;
+    height: 20px;
+}
+
+.currentCosts, .currentAdvCosts {
+    margin-top: 30px;
+}
+
+.currentBookOutput, .currentAdvOutput {
+    margin-left: 10px;
+    margin-right: 100px;
+    font-size: 1rem;
+    color: #545454;
+}
+
+.bookNowBtns, .AdvBtns {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#bookNow, #favourites, #bookAdv {
+    margin: 20px 70px;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#bookNow:hover, #favourites:hover, #bookAdv:hover {
+    background-color: #4989b4;
+    color: #fff;
+}
+
+/*Adventure form*/
+
+.input-box select {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    background-color: #476e89;
+    color: #ffffff;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.guide-select {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+}
+
+.guide-select label {
+    color: #333;
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+
+.guide-select-container input {
+    margin-right: 50px;
+}
+
+/*Display Table*/
+.detailsTable table, .advTable table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #000000;
+}
+
+.detailsTable thead {
+    background-color: rgba(55, 120, 150, 0.868);
+    color: #fff;
+    font-size: 14px;
+}
+
+.detailsTable td, .detailsTable th {
+    padding: 10px;
+    text-align: center;
+}
+
+.detailsTable tbody tr:nth-child(even) {
+    background-color: #f2f2f2c2;
+}
+
+.detailsTable {
+    display: flex;
+    justify-content: space-around;
+}
+
+.advTable {
+    margin-top: 20px;
+}
+
+/*============================== MAIN SECTION 2 ================================*/
+
+/* ===== INDEX PAGE ===== */
+.second-section {
+    min-height: 65vh;
+    background-color: #f1f1f1;
+}
+
+.branches-section {
+    background: 100%;
+    background-color: #fdfdfd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.branches-section h1 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.inner-container1, .inner-container2 {
+    display: grid;
+    place-items: center;
+    background-color: #f1f1f1;
+    flex-basis: 45%;
+    margin-left: 30px;
+    width: 40%;
+}
+
+.inner-container1 {
+    float: left;
+    margin-left: 100px;
+}
+
+.inner-container2 {
+    float: right;
+    margin-right: 100px;
+}
+
+.inner-container1 ol, .inner-container2 ol {
+    list-style-position: inside;
+    padding: 15px;
+}
+
+.inner-container1 li, .inner-container2 li {
+    font-size: 25px;
+    font-weight: 550;
+}
+
+.inner-container1 li a, .inner-container2 li a {
+    text-decoration: none;
+    color: black;
+}
+
+.inner-container1 img, .inner-container2 img {
+    width: 90%;
+    padding: 5px;
+}
+
+.inner-container1 p, .inner-container2 p {
+    font-size: 14px;
+    color: #545454;
+    line-height: 20px;
+    text-align: justify;
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+
+/* ===== BRANCHES PAGE ===== */
+.branches-second-section {
+    min-height: 80vh;
+    background-color: #f1f1f1;
+}
+
+.branches-maldives-section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.branches-second-section .branches-maldives-section .col {
+    width: 50%;
+}
+
+.content-col {
+    width: 40%;
+    float: right;
+    margin-left: 100px;
+}
+
+.content-col h1 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.content-col p {
+    font-size: 14px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.map-col {
+    width: 60%;
+    float: left;
+    margin-left: 30px;
+}
+
+.branches-second-section .branches-maldives-section iframe {
+    width: 100%;
+    height: 500px;
+    padding: 50px;
+}
+
+.branches-second-section .image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    width: 200%;
+    background-color: #bcbcbc;
+}
+
+.image-gallery img {
+    max-width: 400px;
+    /* height: 200px; */
+    margin: 5px;
+}
+
+
+/* ===== ADVENTURES PAGE ===== */
+.adventures-second-section {
+    min-height: 80vh;
+    background-color: #f1f1f1;
+}
+
+.adventures-watersports-section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.adventures-second-section .adventures-watersports-section .col {
+    width: 50%;
+}
+
+.content-col {
+    width: 40%;
+    float: right;
+    margin-left: 100px;
+}
+
+.content-col h1 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.content-col p {
+    font-size: 14px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.map-col {
+    width: 60%;
+    float: left;
+    margin-left: 30px;
+}
+
+.adventures-second-section .adventures-watersports-section iframe {
+    width: 80%;
+    height: 500px;
+    padding: 50px;
+}
+
+.adventures-second-section .image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    width: 100%;
+    background-color: #bcbcbc;
+}
+
+.image-gallery img {
+    max-width: 300px;
+    height: 200px;
+    margin: 5px;
+}
+
+
+/* ===== RESTAURANTS PAGE ===== */
+.restaurants-second-section {
+    min-height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
+.restaurants-two-section {
+    background: url(images/image39.jpg) no-repeat left;
+    background-size: 60%;
+    background-color: #f1f1f1;
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+.inner-container-two {
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 80px;
+}
+
+.inner-container-two h1 {
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+
+/*============================ MAIN SECTION 3 ===========================*/
+
+/* ===== INDEX PAGE ===== */
+.third-section {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
+.restaurants-section{
+    background: url(images/image4.jpg);
+    background-size: 100%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 150px 0;
+}
+
+.inner-container3 {
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 80px;
+}
+
+.inner-container3 h1 {
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.inner-container3 p {
+    font-size: 14px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.inner-container3 ul {
+    font-size: 14px;
+    color: #545454;
+    line-height: 30px;
+    text-align: left;
+    margin-left: 20px;
+    list-style-position: inside;
+    list-style-type: square;
+}
+
+.inner-container3 ul li a {
+    color: black;
+}
+
+/* ===== BRANCHES PAGE ===== */
+.branches-third-section {
+    min-height: 80vh;
+    background-color: #f1f1f1;
+}
+
+.branches-bahamas-section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+.content-col {
+    width: 40%;
+    float: right;
+    margin-left: 100px;
+}
+
+.content-col h1 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.content-col p {
+    font-size: 14px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.map-col {
+    width: 60%;
+    float: left;
+    margin-left: 30px;
+}
+.branches-third-section .branches-bahamas-section .col {
+    width: 50%;
+}
+
+.branches-third-section .image-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 5px;
+    align-items: center;
+    background-color: #bcbcbc;
+}
+
+.image-gallery img {
+    max-width: 300px;
+    height: 200px;
+    margin: 5px;
+}
+
+.branches-third-section .branches-bahamas-section iframe {
+    width: 80%;
+    height: 500px;
+    padding: 50px;
+}
+
+/* ===== ADVENTURES PAGE ===== */
+.adventures-third-section {
+    min-height: 80vh;
+    background-color: #f1f1f1;
+}
+
+.adventures-beachsports-section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.adventures-third-section .adventures-beachsports-section .col {
+    width: 50%;
+}
+
+.content-col {
+    width: 40%;
+    float: right;
+    margin-left: 100px;
+}
+
+.content-col h1 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.content-col p {
+    font-size: 14px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.map-col {
+    width: 60%;
+    float: left;
+    margin-left: 30px;
+}
+
+.adventures-third-section .adventures-beachsports-section iframe {
+    width: 80%;
+    height: 500px;
+    padding: 50px;
+}
+
+.adventures-third-section .image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    width: 100%;
+    background-color: #bcbcbc;
+}
+
+.image-gallery img {
+    max-width: 300px;
+    height: 200px;
+    margin: 5px;
+}
+
+/* ===== RESTAURANTS PAGE ===== */
+.restaurants-third-section {
+    min-height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
+.restaurants-three-section {
+    background: url(images/image40.jpg) no-repeat left;
+    background-size: 60%;
+    background-color: #f1f1f1;
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+.inner-container-three {
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 80px;
+}
+
+.inner-container-three h1 {
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+
+/*========================== MAIN SECTION 4 =============================*/
+
+/* ===== INDEX PAGE ===== */
+.fourth-section {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
+.more-section {
+    background-size: 100%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+.more-section h1 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 900;
+    margin-top: 45px;
+    margin-bottom: 50px;
+}
+
+
+.fourth-section div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.fourth-section div img {
+    width: 400px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    height: 300px;
+    border-radius: 13px;
+    box-shadow: 4px 7px 7px 0px #bcbcbc;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+/*when the image is hovered it will zoom*/
+.fourth-section div img:hover {
+    transform: scale(1.2);
+}
+
+/* ===== BRANCHES PAGE ===== */
+.table-container {
+    padding: 0 10%;
+    margin: 50px auto 0;
+    margin-bottom: 50px;
+}
+
+.table-container h1 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 900;
+    margin-top: 45px;
+    margin-bottom: 50px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table thead {
+    background-color: rgba(74, 149, 184, 0.868);
+}
+
+.table thead tr th {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.35px;
+    color: #ffffff;
+    opacity: 1;
+    padding: 12px;
+    vertical-align: top;
+    border: 1px solid #f1f1f1;
+}
+
+.table tbody tr td {
+
+    font-size: 16px;
+    letter-spacing: 0.35px;
+    font-weight: normal;
+    color: black;
+    background-color: aliceblue;
+    padding: 18px;
+    text-align: center;
+    border: 1px solid #f1f1f1;
+}
+
+.table tfoot {
+    text-align: center;
+    background-color: rgba(74, 149, 184, 0.868);
+  }
+
+.table tfoot tr td {
+    font-weight: 600;
+    padding: 10px;
+}
+
+/* ===== ADVENTURES PAGE ===== */
+.adventures-fourth-section {
+    min-height: 80vh;
+    background-color: #f1f1f1;
+}
+
+.adventures-sightsee-section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.adventures-fourth-section .adventures-sightsee-section .col {
+    width: 50%;
+}
+
+.content-col {
+    width: 40%;
+    float: right;
+    margin-left: 100px;
+}
+
+.content-col h1 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.content-col p {
+    font-size: 14px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.map-col {
+    width: 60%;
+    float: left;
+    margin-left: 30px;
+}
+
+.adventures-fourth-section .adventures-sightsee-section iframe {
+    width: 80%;
+    height: 500px;
+    padding: 50px;
+}
+
+.adventures-fourth-section .image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    width: 100%;
+    background-color: #bcbcbc;
+}
+
+.image-gallery img {
+    max-width: 300px;
+    height: 200px;
+    margin: 5px;
+}
+
+/* ===== RESTAURANTS PAGE ===== */
+.restaurants-fourth-section {
+    min-height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
+.restaurants-more-section {
+    background: url(images/image41.jpg) no-repeat left;
+    background-size: 60%;
+    background-color: #f1f1f1;
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+.inner-container-more {
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 80px;
+}
+
+.inner-container-more h1 {
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+
+/* ============================ FOOTER ============================= */
+footer .container {
+    background-color: black;
+}
+
+footer .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+}
+
+footer .column h4 {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 22px;
+    position: relative;
+    font-family: poppins;
+}
+
+footer .column h4::before {
+    content: "";
+    width: 70px;
+    height: 2px;
+    position: absolute;
+    background-color: rgba(74, 149, 184, 0.868);
+    bottom: -10px;
+}
+
+footer .column p {
+    color: white;
+    opacity: 0.7;
+    padding: 10px 0;
+}
+
+footer .column ul {
+    list-style: none;
+}
+
+footer .column ul li {
+    padding: 10px 0;
+}
+
+footer .column ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+footer .column ul li a:hover {
+    opacity: 1;
+}
+
+footer .column input {
+    border: none;
+    width: 250px;
+    height: 45px;
+    display: block;
+    padding-left: 20px;
+    margin: 14px 0;
+}
+
+footer .column .inputSubmit {
+    padding: 0px 20px;
+    background-color: rgba(74, 149, 184, 0.868);
+    border: none;
+    color: white;
+}
+
+footer .col p {
+    color: white;
+}
+
+footer hr {
+    opacity: 0.7;
+}
+
+
+
+
+/*============== MOBILE RESPONSIVE AT MAX-WIDTH: 1200PX ===============*/
+
+@media screen and (max-width:1200px){
+
+    /*===================INDEX PAGE=====================*/
+    /*==== MAIN SECTION 2 ====*/
+    .branches-section {
+        padding: 20px 0;
+    }
+
+    .branches-section h1 {
+        margin-left: 30px;
+    }
+
+    .inner-container1, .inner-container2 {
+        flex-basis: 80%;
+    }
+
+    /*===================BRANCHES PAGE=====================*/
+    /*==== MAIN SECTION 1 ====*/
+    .branches-intro-section {
+        background-size: 80%;
+    }
+
+    /*==== MAIN SECTION 2 ====*/
+    .map-col {
+        width: 80%;
+    }
+    
+    .branches-second-section .branches-maldives-section iframe {
+        width: 100%;
+    }
+    
+    .image-gallery img {
+        max-width: 350px;
+        height: 300px;
+    }
+
+    /*==== MAIN SECTION 3 ====*/
+    .branches-third-section .branches-bahamas-section iframe {
+        width: 100%;
+    }
+
+    /*===================ADVENTURES PAGE=====================*/
+
+    /*==== MAIN SECTION 1 ====*/
+    .adventures-intro-section {
+        background-size: 80%;
+    }
+
+    /*==== MAIN SECTION 2 ====*/
+    .map-col {
+        width: 80%;
+    }
+
+    .adventures-second-section .adventures-watersports-section iframe {
+        width: 100%;
+    }
+
+    .image-gallery img {
+        max-width: 350px;
+        height: 300px;
+    }
+
+    /*==== MAIN SECTION 3 ====*/
+    .adventures-third-section .adventures-beachsports-section iframe {
+        width: 100%;
+    }
+
+    /*==== MAIN SECTION 4 ====*/
+    .adventures-fourth-section .adventures-sightsee-section iframe {
+        width: 100%;
+    }
+
+
+    /*==================RESTAURANTS PAGE=====================*/
+    /*==== MAIN SECTION 1 ====*/
+    .restaurants-one-section {
+        background-size: 80%;    /*increasing background image */
+    }
+
+    /*==== MAIN SECTION 2 ====*/
+    .restaurants-two-section {
+        background-size: 80%;
+    }
+
+    /*==== MAIN SECTION 3 ====*/
+    .restaurants-three-section {
+        background-size: 80%;
+    }
+
+    /*==== MAIN SECTION 4 ====*/
+    .restaurants-more-section {
+        background-size: 80%;
+    }
+    
+    /*===================BOOKINGS PAGE=====================*/
+    .form-container {
+        margin-left: 20px;
+    }
+
+    .form-container .form fieldset {
+        padding: 20px;
+    }
+
+    .form .column {
+        flex-direction: column;
+        column-gap: 20px;
+    }
+
+    .room-types input {
+        margin-right: 10px;
+    }
+}
+
+/*============= MOBILE RESPONSIVE AT MAX-WIDTH: 1000PX ================*/
+
+@media screen and (max-width:1000px){
+
+    /*===================INDEX PAGE=====================*/
+    /* ==== ELEMENTS ON HERO-IMAGE ==== */
+    header .heading h1 {
+        font-size: 70px;
+    }
+
+    /*==== MAIN SECTION 1 ====*/
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+
+    .inner-container{
+        width: 100%;
+    }
+
+    /*==== MAIN SECTION 2 ====*/
+    .branches-section {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .branches-section h1 {
+        margin-bottom: 25px;
+        font-size: 35px;
+    }
+
+    .inner-container1 p, .inner-container2 p {
+        text-align: left;
+    }
+
+    /*==== MAIN SECTION 3 ====*/
+    .restaurants-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+
+    .inner-container3 {
+        width: 100%;
+    }
+
+    /*===================BRANCHES PAGE=====================*/
+    /*==== MAIN SECTION 1 ====*/
+    .branches-intro-section {
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .branches-inner-container1 {
+        width: 100%;
+    }
+
+    /*===================ADVENTURES PAGE=====================*/
+    /*==== MAIN SECTION 1 ====*/
+    .adventures-intro-section {
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+
+    .adventures-inner-container1 {
+        width: 100%;
+    }
+
+    /*===================RESTAURANTS PAGE=====================*/
+    /*==== MAIN SECTION 1 ====*/
+    .restaurants-one-section{
+        background-size: 100%;
+        padding: 100px 0;
+    }
+
+    .inner-container-one {
+        width: 60%;
+        padding: 60px;
+    }
+
+    /*==== MAIN SECTION 2 ====*/
+        .restaurants-two-section{
+        background-size: 100%;
+        padding: 100px 0;
+    }
+    
+    .inner-container-two{
+        width: 60%;
+    }
+
+    /*==== MAIN SECTION 3 ====*/
+    .restaurants-three-section{
+        background-size: 100%;
+        padding: 100px 0;
+    }
+
+    .inner-container-three{
+        width: 60%;
+    }
+
+    /*==== MAIN SECTION 4 ====*/
+    .restaurants-more-section{
+        background-size: 100%;
+        padding: 100px 0;
+    }
+    
+    .inner-container-more{
+        width: 60%;
+        padding: 60px;
+    }
+
+    /*===================BOOKING PAGE=====================*/
+    .form-container {
+        margin-left: 10px;
+    }
+
+    .form .input-box, .room-types {
+        width: 100%;
+    }
+
+    .form .column {
+        flex-direction: column;
+        column-gap: 10px;
+    }
+
+    .detailsTable,.advTable {
+        flex-direction: column;
+    }
+}
+
+/*============== MOBILE RESPONSIVE AT MAX-WIDTH: 930PX ================*/
+
+@media(max-width:930px){
+
+    /*===================INDEX PAGE=====================*/
+    /*====NAVIGATION BAR====*/
+    header .navigation{
+        padding: 20px;
+    }
+
+    header label{
+        display: initial;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(115, 147, 179, 1);
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        display: none;  
+    }
+
+    header .navbar ul li{
+        width: 100%;
+    }
+
+    header .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li{
+        background: #1F456E;
+    }
+
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+
+    /*====ELEMENTS ON HERO-IMAGE====*/
+    header .title {
+        position: absolute;
+        text-align: center;
+        left: 10%;
+        color: #fff;
+    }
+
+    header .heading h1 {
+        font-size: 65px;
+    }
+
+    /*==== MAIN SECTION 2 ====*/
+    .branches-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .branches-section h1 {
+        margin-bottom: 25px;
+        font-size: 35px;
+    }
+
+    .inner-container1, .inner-container2 {
+        text-align: center;
+        margin-bottom: 30px;
+        margin-left: 0;
+        width: 80%;
+    }
+
+    .inner-container2 {
+        margin-left: 100px;
+        margin-bottom: 10px;
+    }
+
+    .inner-container1 img, .inner-container2 img {
+        width: 50%;
+        padding: 5px;
+    }
+
+    /*====FOOTER====*/
+    footer {
+        padding: 20px;
+    }
+
+    /*===================BRANCHES PAGE=====================*/
+    /*==== MAIN SECTION 2 ====*/
+    .image-gallery img {
+        max-width: 300px;
+        height: 250px;
+    }
+
+    /*===================BRANCHES PAGE=====================*/
+    .form-container {
+        margin-left: 5px;
+    }
+
+    .form .column {
+        column-gap: 5px;
+    }
+}
+
+/*============== MOBILE RESPONSIVE AT MAX-WIDTH: 730PX ================*/
+
+@media (max-width: 730px) {
+    .form fieldset {
+        max-width: 500px;
+    }
+
+    .form .input-box input {
+        width: 70%;
+    }
+
+    .loyalty {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .loyalty button {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+}
+
+/*============== MOBILE RESPONSIVE AT MAX-WIDTH: 600PX =================*/
+
+@media (max-width:600px){
+
+    /*===================INDEX PAGE=====================*/
+    /*====ELEMENTS ON HERO-IMAGE====*/
+    header .heading h1 {
+        font-size: 50px;
+    }
+
+    header .heading p {
+        font-size: 15px;
+    }
+
+    /*==== MAIN SECTION 1 ====*/
+    .about-section {
+        padding: 0;
+    }
+
+    .inner-container {
+        padding: 60px;
+        background-color: #f1f1f1;
+    }
+
+    .inner-container h1 {
+        font-size: 30px;
+    }
+
+    /*==== MAIN SECTION 2 ====*/
+    .branches-section h1 {
+        font-size: 30px;
+    }
+
+    /*====FOOTER====*/
+    footer .row {
+        flex-direction: column;
+        padding: 20px 30px;
+    }
+
+    footer .column {
+        width: 100%;
+    }
+
+    footer .column p {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    footer .column ul {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    footer .column input {
+        width: 100%;
+    }
+
+    /*===================BRANCHES PAGE=====================*/
+    /*==== MAIN SECTION 1 ====*/
+    .branches-intro-section {
+        padding: 0;
+    }
+
+    .branches-inner-container1 {
+        padding: 50px;
+        background-color: #f1f1f1;
+    }
+
+    .branches-inner-container1 h1 {
+        font-size: 30px;
+    }
+
+    /*==== MAIN SECTION 2 ====*/
+    .branches-maldives-section {
+        display: block;
+    }
+
+    .branches-second-section .branches-maldives-section .col {
+        width: 100%;
+        background-color: white;
+    }
+
+    .content-col {
+        width: 100%;
+        padding: 50px;
+    }
+
+    .map-col {
+        width: 100%;
+        margin-left: 0;
+        background-color: white;
+    }
+
+    .branches-second-section .image-gallery {
+        display: flex;
+        width: 100%;
+    }
+
+    /*==== MAIN SECTION 3 ====*/
+    .branches-bahamas-section {
+        display: block;
+    }
+
+    .branches-third-section .branches-bahamas-section .col {
+        width: 100%;
+    }
+
+    .content-col {
+        width: 100%;
+        padding: 50px;
+    }
+
+    .map-col {
+        width: 100%;
+        margin-left: 0;
+        background-color: #f1f1f1;
+    }
+
+    .branches-third-section .image-gallery {
+        display: flex;
+        width: 100%;
+    }
+    
+
+    /*==== MAIN SECTION 4 ====*/
+    .table thead {
+        display: none;
+    }
+
+    .table, .table tbody, .table tr, .table td {
+        display: block;
+        width: 100%;
+    }
+
+    .table tr {
+        margin-bottom: 15px; 
+    }
+
+    .table tbody tr td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    .table td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: left;
+    }
+
+    /*===================ADVENTURES PAGE=====================*/
+    /*==== MAIN SECTION 1 ====*/
+    .adventures-intro-section {
+        padding: 0;
+    }
+
+    .adventures-inner-container1 {
+        padding: 50px;
+        background-color: #f1f1f1;
+    }
+
+    .adventures-inner-container1 h1 {
+        font-size: 30px;
+    }
+
+    /*==== MAIN SECTION 2 ====*/
+    .adventures-watersports-section {
+        display: block;
+    }
+
+    .adventures-second-section .adventures-watersports-section .col {
+        width: 100%;
+        background-color: white;
+    }
+
+    .content-col {
+        width: 100%;
+        padding: 50px;
+    }
+
+    .map-col {
+        width: 100%;
+        margin-left: 0;
+        background-color: white;
+    }
+
+    .adventures-second-section .image-gallery {
+        display: flex;
+        width: 100%;
+    }
+
+    /*==== MAIN SECTION 3 ====*/
+    .adventures-beachsports-section {
+        display: block;
+    }
+
+    .adventures-third-section .adventures-beachsports-section .col {
+        width: 100%;
+        background-color: white;
+    }
+
+    .content-col {
+        width: 100%;
+        padding: 50px;
+    }
+
+    .map-col {
+        width: 100%;
+        margin-left: 0;
+        background-color: white;
+    }
+
+    .adventures-third-section .image-gallery {
+        display: flex;
+        width: 100%;
+    }
+
+    /*==== MAIN SECTION 4 ====*/
+    .adventures-sightsee-section {
+        display: block;
+    }
+
+    .adventures-fourth-section .adventures-sightsee-section .col {
+        width: 100%;
+        background-color: white;
+    }
+
+    .content-col {
+        width: 100%;
+        padding: 50px;
+    }
+
+    .map-col {
+        width: 100%;
+        margin-left: 0;
+        background-color: white;
+    }
+
+    .adventures-fourth-section .image-gallery {
+        display: flex;
+        width: 100%;
+    }
+
+    /*===================RESTAURANTS PAGE=====================*/
+    /*==== MAIN SECTION 1 ====*/
+    .restaurants-one-section {
+        background-size: 100%;
+        padding: 100px 20px;
+    }
+
+    .inner-container-one {
+        width: 100%;
+        padding: 50px;
+    }
+
+    .inner-container-one h1 {
+        font-size: 25px;
+    }
+
+    .inner-container-one .text {
+        font-size: 12px;
+    }
+
+    .inner-container-one .text a {
+        font-size: 15px;
+    }
+
+    /*==== MAIN SECTION 2 ====*/
+    .restaurants-two-section {
+        background-size: 100%;
+        padding: 100px 20px;
+    }
+
+    .inner-container-two {
+        width: 100%;
+        padding: 50px;
+    }
+
+    .inner-container-two h1 {
+        font-size: 25px;
+    }
+
+    .inner-container-two .text {
+        font-size: 12px;
+    }
+
+    .inner-container-two .text a {
+        font-size: 15px;
+    }
+
+    /*==== MAIN SECTION 3 ====*/
+    .restaurants-three-section {
+        background-size: 100%;
+        padding: 100px 20px;
+    }
+
+    .inner-container-three {
+        width: 100%;
+        padding: 50px;
+    }
+
+    .inner-container-three h1 {
+        font-size: 25px;
+    }
+
+    .inner-container-three .text {
+        font-size: 12px;
+    }
+
+    .inner-container-three .text a {
+        font-size: 15px;
+    }
+
+    /*==== MAIN SECTION 4 ====*/
+    .restaurants-more-section {
+        background-size: 100%;
+        padding: 100px 20px;
+    }
+
+    .inner-container-more {
+        width: 100%;
+        padding: 50px;
+    }
+
+    .inner-container-more h1 {
+        font-size: 25px;
+    }
+
+    .inner-container-more .text {
+        font-size: 12px;
+    }
+
+    .inner-container-more .text a {
+        font-size: 15px;
+    }
+
+    /*===================BOOKING PAGE=====================*/
+    .form-container {
+        margin-left: 0;
+    }
+
+    .form .column {
+        flex-direction: column;
+        column-gap: 10px;
+    }
+
+    .form .input-box input,
+    .room-types input {
+        width: 100%;
+    }
+
+    .form .input-box label {
+        margin-bottom: 5px;
+    }
+
+    #book-form2 fieldset {
+        padding: 10px;
+    }
+
+    .form fieldset {
+        max-width: 300px;
+    }
+
+    .form .input-box input {
+        width: 50%;
+    }
+
+    .loyalty {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .loyalty button {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+}
+
+/*============== MOBILE RESPONSIVE AT MAX-WIDTH: 400PX ==================*/
+
+@media(max-width: 400px) {
+
+    /*===================INDEX PAGE=====================*/
+    /* ===== NAVIGATION BAR ==== */
+    header .logo {
+        font-size: 20px;
+    }
+
+    /* ==== ELEMENTS ON HERO-IMAGE ==== */
+    header .heading h1 {
+        font-size: 40px;
+    }
+
+    header .heading p {
+        font-size: 10px;
+    }
+
+    header .button {
+        font-size: 10px;
+    }
+
+    /* ==== MAIN SECTION 1 ==== */
+    .inner-container h1 {
+        margin-bottom: 25px;
+        font-size: 25px;
+    }
+
+    .text {
+        font-size: 12px;
+        line-height: 25px;
+    }
+
+    /* ==== MAIN SECTION 2 ==== */
+    .branches-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .branches-section h1 {
+        margin-bottom: 25px;
+        font-size: 25px;
+    }
+
+    .inner-container1, .inner-container2 {
+        text-align: center;
+        margin-bottom: 30px;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .inner-container2 {
+        margin-left: 100px;
+        margin-bottom: 10px;
+    }
+
+    /* ==== MAIN SECTION 3 ==== */
+    .restaurants-section {
+        padding: 0;
+    }
+
+    .inner-container3 {
+        padding: 60px;
+        background-color: #f1f1f1;
+    }
+
+    .inner-container3 h1 {
+        font-size: 30px;
+    }
+
+
+    /*===================BRANCHES PAGE=====================*/
+    /* ==== MAIN SECTION 1 ==== */
+    .branches-inner-container1 h1 {
+        margin-bottom: 25px;
+        font-size: 25px;
+    }
+
+    .branches-inner-container1 .text {
+        font-size: 12px;
+        line-height: 25px;
+    }
+
+
+    /* ==== MAIN SECTION 4 ==== */
+    .table tbody tr td {
+        font-size: 13px;
+        letter-spacing: 0.05px;
+        font-weight: normal;
+        color: black;
+        background-color: aliceblue;
+        padding: 25px;
+        text-align: right;
+        border: 1px solid #f1f1f1;
+    }
+
+    /*===================RESTAURANTS PAGE=====================*/
+    /*==== MAIN SECTION 1 ====*/
+    .restaurants-one-section {
+        padding: 0;
+    }
+
+    .inner-container-one {
+        padding: 30px;
+    }
+
+    .inner-container-one h1 {
+        font-size: 20px;
+    }
+
+    .inner-container-one .text {
+        font-size: 10px;
+    }
+
+    .inner-container-one .text a {
+        font-size: 13px;
+    }
+
+    /*==== MAIN SECTION 2 ====*/
+    .inner-container-two {
+        padding: 30px;
+    }
+
+    .inner-container-two h1 {
+        font-size: 20px;
+    }
+
+    .inner-container-two .text {
+        font-size: 10px;
+    }
+
+    .inner-container-two .text a {
+        font-size: 13px;
+    }
+
+    /*==== MAIN SECTION 3 ====*/
+    .restaurants-three-section {
+        padding: 0;
+    }
+
+    .inner-container-three {
+        padding: 30px;
+    }
+
+    .inner-container-three h1 {
+        font-size: 20px;
+    }
+
+    .inner-container-three .text {
+        font-size: 10px;
+    }
+
+    .inner-container-three .text a {
+        font-size: 13px;
+    }
+
+    /*==== MAIN SECTION 4 ====*/
+    .inner-container-more {
+        padding: 30px;
+    }
+
+    .inner-container-more h1 {
+        font-size: 20px;
+    }
+
+    .inner-container-more .text {
+        font-size: 10px;
+    }
+
+    .inner-container-more .text a {
+        font-size: 13px;
+    }
+
+    /*===================BRANCHES PAGE=====================*/
+    /*==== MAIN SECTION 4 ====*/
+    .booking-class {
+        padding: 0px;
+    }
+
+    .form-container {
+        max-width: 500px;
+        padding: 20px;
+        margin-left: 0px;
+    }
+
+    .form-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .form fieldset {
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+
+    legend {
+        font-size: 15px;
+    }
+
+    /*===================BOOKINGS PAGE=====================*/
+    .form-container {
+        padding: 20px;
+    }
+
+    .form .column {
+        column-gap: 5px;
+    }
+}
